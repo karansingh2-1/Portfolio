@@ -28,6 +28,7 @@ body, html {
 .loader {
     /* display: none; */
     position: absolute;
+    z-index: 9999;
     width: 100%;
     height: 100vh;
     background: #111;
@@ -69,7 +70,6 @@ body, html {
 
 .reveal .parent .child {
     display: block;
-    /* transform: translateY(50%); */
 }
 
 .parent .child span {
@@ -79,6 +79,7 @@ body, html {
 .green {
     /* display: none; */
     position: absolute;
+    z-index: 999;
     top: 100%;
     width: 100%;
     height: 0vh;
@@ -98,6 +99,8 @@ body, html {
     align-items: center;
     width: 100%;
     height: 100px;
+    margin-top: -0.3vw;
+    padding-left: 7vw;
 }
 
 .home .nav a {
@@ -125,7 +128,7 @@ body, html {
 }
 
 .row {
-    margin-top: 2vw;
+    margin-top: 2.4vw;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -139,13 +142,63 @@ body, html {
 }
 
 .row .text {
-    margin-top: 4vw
+    margin-top: 4vw;
 }
 
 .row h5 {
     display: flex;
     flex-direction: column;
-    opacity: .6;
-    font-weight: 400;
-    font-size: 13px;
+    /* opacity: .6; */
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: -11vw;
+    color: #a2a2a2;
 }
+
+.row1 {
+    margin-top: 2.4vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    color: #333;
+    padding: 0 5vw;
+    margin-top: -2.7vw;
+
+}
+
+.row1 h1 {
+    font-size: 12.8vw;
+    font-weight: 600;
+}
+
+.row1 img {
+    height: 56.41px;
+    width: 56.41px;
+}
+
+.row1 svg {
+    height: 120px;
+    margin-left: 7vw;
+    margin-bottom: -0.7vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

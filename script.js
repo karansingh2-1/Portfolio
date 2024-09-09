@@ -14,9 +14,8 @@ function revealToSpan() {
   });
 }
 
-revealToSpan();
-
-var tl = gsap.timeline();
+function loaderAnimation() {
+  var tl = gsap.timeline();
 
 tl
 .from(".child span", {
@@ -49,3 +48,24 @@ tl
     delay: -.5,
     ease: Circ.easeInOut,
 });
+}
+
+// function animateSvg() {
+  document.querySelectorAll("#Visual>g").forEach(function (e) {
+    var character = e.childNodes[1].childNodes[1];
+
+    character.style.strokeDasharray = character.getTotalLength() + 'px';
+    character.style.strokeDashoffset = character.getTotalLength() + 'px';
+  })
+
+  gsap.to("#Visual>g>g>path, #Visual>g>g>polyline" , {
+    strokeDashoffset: 0,
+    duration: 2,
+    ease: Expo.easeInOut,
+    delay: 3
+  })
+// }
+
+revealToSpan();
+loaderAnimation();
+// animateSvg();
